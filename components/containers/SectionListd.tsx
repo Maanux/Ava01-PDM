@@ -28,11 +28,11 @@ export default function SectionListd() {
 const styles = StyleSheet.create({
   Title: {
     fontWeight: "bold",
-    color: "black",
+    color: "white",
   },
   TitleCars: {
     fontWeight: "bold",
-    color: "black",
+    color: "white",
     width: "100%",
     borderTopRightRadius: 4,
     borderTopLeftRadius: 4,
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     marginTop: 24,
     fontWeight: "bold",
-    color: "black",
+    color: "white",
     width: "100%",
     borderTopRightRadius: 4,
     borderTopLeftRadius: 4,
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
 
   tab: {
-    color: "black",
+    color: "white",
     width: "90%",
     left: 10,
     top: 0,

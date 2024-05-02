@@ -7,11 +7,11 @@ export default function SobreCard({ children }: PropsWithChildren) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#DCDCDC",
+    backgroundColor: "#A9A9A9",
     maxWidth: "80%",
     width: "80%",
-    height: "60%",
-    borderRadius: 4,
+    height: "59%",
+    borderRadius: 9,
     padding: 12,
     alignItems: "center",
     left: 40,

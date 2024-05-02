@@ -30,6 +30,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   placeHolder: {
-    color: "black",
+    color: "white",
   },
 });

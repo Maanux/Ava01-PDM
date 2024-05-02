@@ -7,14 +7,14 @@ export default function LogOutCard({ children }: PropsWithChildren) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#DCDCDC",
-    maxWidth: "80%",
-    width: "80%",
-    borderRadius: 4,
-    padding: 12,
+    backgroundColor: "gray",
+    width: "50%",
+    height: "16%",
+    borderRadius: 9,
+    padding: 20,
     alignItems: "center",
     alignContent: "center",
-    left: 40,
-    top: 10,
+    left: 100,
+    top: 76,
   },
 });

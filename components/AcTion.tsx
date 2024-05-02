@@ -1,11 +1,13 @@
 import { useActionSheet } from "@expo/react-native-action-sheet";
-import { Text } from "react-native";
 import ActionFormButton from "./Form/ActionFormButton";
-import { router } from "expo-router";
+import { router, useNavigation } from "expo-router";
+import { CommonActions, NavigationContainer } from "@react-navigation/native";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Touchable, TouchableOpacity } from "react-native";
 
 export default function AcTion() {
   const { showActionSheetWithOptions } = useActionSheet();
-
+  const navigation = useNavigation();
   const onPress = () => {
     const options = ["Sobre o App", "LogOut", "Cancel"];
     const destructiveButtonIndex = 1;
@@ -23,7 +25,7 @@ export default function AcTion() {
             router.push("./SobreApp");
             break;
           case 1:
-            router.push("./../index");
+            navigation.dispatch(CommonActions.goBack());
             break;
           default:
             break;
@@ -32,5 +34,10 @@ export default function AcTion() {
     );
   };
 
-  return <ActionFormButton title="Menu" onPress={onPress} />;
+  return (
+    <TouchableOpacity onPress={onPress}>
+      {/* <ActionFormButton title="Menu" onPress={onPress} /> */}
+      <MaterialIcons name="menu" size={24} color="black" />
+    </TouchableOpacity>
+  );
 }

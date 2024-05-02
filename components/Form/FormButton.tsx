@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: "bold",
+    fontSize: 0,
   },
   image: {
     width: 100,

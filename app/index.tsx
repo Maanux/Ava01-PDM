@@ -56,7 +56,7 @@ export default function App() {
 
           <FormButton onPress={handleLogin} title="Logar" />
 
-          <Text>Procure no melhor App do Mercado</Text>
+          <Text style={styles.text}>Procure no melhor App do Mercado</Text>
         </Card>
         <Link href="./Carros/SobreApp" style={styles.copy}>
           <Text>© Maanux</Text>
@@ -88,5 +88,9 @@ const styles = StyleSheet.create({
     fontSize: 17,
     top: 175,
     fontWeight: "bold",
+    color: "white",
+  },
+  text: {
+    color: "white",
   },
 });

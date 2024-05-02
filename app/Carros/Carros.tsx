@@ -6,29 +6,32 @@ import LogOutCard from "../../components/containers/section/LogOutCard";
 import { Link, router } from "expo-router";
 import FullScreen from "../../components/containers/FullScreen";
 import Header from "../../components/containers/Header/Header";
-//teste
+import { MaterialIcons } from "@expo/vector-icons";
+
 import {
   ActionSheetProvider,
   connectActionSheet,
+  useActionSheet,
 } from "@expo/react-native-action-sheet";
 
 import AcTion from "../../components/AcTion";
+import LogOutCardCarros from "../../components/containers/section/LogOutCardCarros";
 
-//export default function Carros()
 function Carros() {
   return (
     <FullScreen>
       <View>
         <Header>
-          <Text style={styles.Title}>HorizonCarz</Text>
+          <Text style={styles.Title2}>HorizonCarz</Text>
+          <LogOutCardCarros>
+            <AcTion />
+          </LogOutCardCarros>
         </Header>
+
         <SectionCard>
           <Text style={styles.Title}>Carros a Venda</Text>
           <SectionListd />
         </SectionCard>
-        <LogOutCard>
-          <AcTion />
-        </LogOutCard>
       </View>
     </FullScreen>
   );
@@ -42,8 +45,14 @@ export default ConnectApp;
 const styles = StyleSheet.create({
   Title: {
     fontWeight: "bold",
-    color: "black",
+    color: "white",
     fontSize: 25,
+  },
+  Title2: {
+    fontWeight: "bold",
+    color: "white",
+    fontSize: 33,
+    marginTop: 25,
   },
   bold: {
     fontWeight: "bold",

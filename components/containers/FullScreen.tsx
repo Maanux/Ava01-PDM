@@ -19,6 +19,6 @@ export default function FullScreen({ children }: FullScreenProps) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
+    backgroundColor: "#4F4F4F",
   },
 });

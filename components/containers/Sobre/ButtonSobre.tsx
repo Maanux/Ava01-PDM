@@ -24,19 +24,15 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 8,
     backgroundColor: "#808080",
-    borderRadius: 4,
-    padding: 12,
+    borderRadius: 9,
+    padding: 20,
     width: "80%",
     alignItems: "center",
-    borderColor: "black",
+    borderColor: "white",
     borderWidth: 2,
   },
   title: {
     fontWeight: "bold",
-  },
-  image: {
-    width: 100,
-    height: 100,
-    resizeMode: "contain",
+    color: "white",
   },
 });
